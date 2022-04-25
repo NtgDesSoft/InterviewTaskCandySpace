@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">InterviewTaskCandyspace</string>
+    <string name="notavailable">Location Not Available</string>
+    <string name="lastseen">Last seen :</string>
+    <string name="searchbyusername">Search by user name</string>
+    <string name="entername">Enter name here</string>
+    <string name="search">Search</string>
+    <string name="reputation">Reputation</string>
+    <string name="toptags">Top Tags</string>
+    <string name="badges">Badges</string>
+    <string name="createdate">Creation Date</string>
+</resources>

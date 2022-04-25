@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lay_root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/user_image_width"
+            android:layout_height="@dimen/user_image_height"
+            android:backgroundTint="@color/black"
+            android:background="@color/black"
+            android:foregroundGravity="center"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/user_image" />
+
+        <TextView
+            android:id="@+id/user_membersince"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/font_subtitle"
+            android:textSize="14sp"
+            android:typeface="sans"
+            app:layout_constraintLeft_toRightOf="@id/user_image"
+            app:layout_constraintTop_toBottomOf="@id/user_name" />
+
+
+        <ImageView
+            android:id="@+id/user_goldbadge"
+            android:layout_width="@dimen/s_badge_image_width"
+            android:layout_height="@dimen/s_badge_image_height"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_badge_gold"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintRight_toLeftOf="@+id/user_silverbadge"
+            app:layout_constraintTop_toBottomOf="@id/user_membersince" />
+
+        <TextView
+            android:id="@+id/badgegold"
+            style="@style/roundtxt"
+            android:background="@drawable/ic_round_gold"
+            app:layout_constraintBottom_toBottomOf="@id/user_goldbadge"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@id/user_goldbadge"
+            app:layout_constraintRight_toRightOf="@id/user_goldbadge"
+            app:layout_constraintTop_toTopOf="@id/user_goldbadge"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageView
+            android:id="@+id/user_silverbadge"
+            android:layout_width="@dimen/s_badge_image_width"
+            android:layout_height="@dimen/s_badge_image_height"
+            android:layout_marginEnd="5dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_badge_silver"
+            app:layout_constraintRight_toLeftOf="@+id/user_bronzebadge"
+            app:layout_constraintTop_toBottomOf="@id/user_membersince" />
+
+        <TextView
+            android:id="@+id/badgesilver"
+            style="@style/roundtxt"
+            android:background="@drawable/ic_round_silver"
+            app:layout_constraintBottom_toBottomOf="@id/user_silverbadge"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@id/user_silverbadge"
+            app:layout_constraintRight_toRightOf="@id/user_silverbadge"
+            app:layout_constraintTop_toTopOf="@id/user_silverbadge"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <ImageView
+            android:id="@+id/user_bronzebadge"
+            android:layout_width="@dimen/s_badge_image_width"
+            android:layout_height="@dimen/s_badge_image_height"
+            android:src="@drawable/ic_badge_bronze"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintTop_toBottomOf="@id/user_membersince" />
+
+        <TextView
+            android:id="@+id/badgebronze"
+            style="@style/roundtxt"
+            android:background="@drawable/ic_round_bronze"
+            app:layout_constraintBottom_toBottomOf="@id/user_bronzebadge"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="@id/user_bronzebadge"
+            app:layout_constraintRight_toRightOf="@id/user_bronzebadge"
+            app:layout_constraintTop_toTopOf="@id/user_bronzebadge"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/lastseen"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:gravity="end"
+            android:textColor="@color/lastseen"
+            android:textSize="11sp"
+            android:typeface="sans"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.522"
+            app:layout_constraintTop_toBottomOf="@id/user_bronzebadge" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
