@@ -20,4 +20,4 @@ This repository contains an android app for interview purpose. It implements MVV
 
 #### !Important: UI & Unit Testing:
 
-! Important - Before start testing please uncomment the testing code lines 36 and comment 41-47 in UserViewModel.kt.(https://github.com/KesavanPanneerselvam/InterviewTaskCandySpace/blob/master/app/src/main/java/com/android/interviewtask/candyspace/ui/userslist/UserViewModel.kt)
+! Important - Before start testing please uncomment the testing code lines 36 and comment 41-47 in UserViewModel.kt.
